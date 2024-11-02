@@ -121,3 +121,46 @@
 
     animation: toActived 0.5s ease-in-out 1;
 }
+
+
+/* Estilos para telas médias (tablets) */
+@media (max-width: 1024px) {
+    .item .title {
+        font-size: 4rem;
+    }
+    .item .fruit {
+        width: 80%;
+    }
+    .item .refri {
+        width: 400px;
+    }
+    #prev, #next {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Estilos para telas pequenas (celulares) */
+@media (max-width: 768px) {
+    .item .title {
+        font-size: 3rem; /* Tamanho menor da fonte para celulares */
+    }
+    .item .fruit {
+        width: 90%; /* Ajuste da largura para celulares */
+        top: 10%;
+    }
+    .item .refri {
+        width: 250px; /* Reduz tamanho da imagem para caber na tela do celular */
+    }
+    #prev, #next {
+        width: 40px;
+        height: 40px;
+        font-size: large;
+    }
+    #prev {
+        left: 10px;
+    }
+    #next {
+        right: 10px;
+    }
+}
